@@ -1,0 +1,381 @@
+[class*="__container"] {
+   max-width: 1800px;
+
+   margin: 0 auto;
+
+
+}
+
+body {
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+img {
+   max-width: 100%;
+   width: auto;
+   height: auto;
+}
+
+.wrapper {
+   overflow: hidden;
+   min-height: 100%;
+
+   /* border: 1px solid red; */
+}
+
+
+
+.header__container {
+   display: flex;
+   justify-content: space-around;
+   background: linear-gradient(45deg, #013f5c, #1ed8ff);
+   border-radius: 4px;
+
+   /* border: 1px solid rgb(0, 255, 0); */
+}
+
+.header__logo {
+   max-width: 100px;
+   max-height: 100px;
+   background: rgb(250, 248, 248);
+   margin: 10px 0 0 0;
+   border-radius: 50%;
+   transition: scale 0.9s ease;
+}
+
+.header__logo:hover {
+   transform: scale(1.2);
+}
+
+.header__menu {
+   /* border: 1px solid red; */
+   min-width: 700px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.header__items {
+   position: relative;
+   font-size: 30px;
+   color: aliceblue;
+
+}
+
+.header__items>a {
+   display: block;
+   padding: 45px 38px;
+}
+
+.header__items:hover {
+   background: #013f5c;
+   border-radius: 4px;
+}
+
+.link:hover {
+   background: #eb4e05;
+}
+
+.header__submenu {
+   position: absolute;
+   top: 100px;
+   left: 0;
+   z-index: 99;
+   min-width: 150px;
+   display: none;
+   background: #023d58;
+   border-radius: 4px;
+   transition: all 1s linear;
+
+}
+
+.header__submenu li:not(:last-child) {
+   color: aliceblue;
+   margin: 10px 0;
+
+}
+
+.header__submenu li:hover {
+   background: rgba(30, 216, 255, 0.5);
+   border-radius: 4px;
+}
+
+.header__submenu li a {
+   display: block;
+   padding: 5px;
+}
+
+.header__items:hover .header__submenu {
+   display: block;
+
+}
+
+
+
+.main {
+   min-height: 1000px;
+}
+
+.main__container {
+   position: relative;
+}
+
+
+
+.position__fon {
+   width: 1800px;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+
+
+.box__item1 {
+   /* border: 1px solid rgb(234, 0, 255); */
+   width: 237px;
+   position: absolute;
+   left: 1424px;
+   top: 672px;
+   transition: all 0.5s ease;
+}
+
+.box__item2 {
+   /* border: 1px solid rgb(17, 129, 129); */
+   width: 237px;
+   position: absolute;
+   left: 1424px;
+   top: 672px;
+   display: none;
+   transition: all 0.5s ease;
+}
+
+.box:hover .box__item2 {
+   display: block;
+
+}
+
+.box:hover .box__item1 {
+   display: none;
+}
+
+
+.position__fish {
+   /* border: 1px solid rgb(255, 208, 0); */
+   width: 571px;
+   position: absolute;
+   top: 140px;
+   left: 550px;
+   z-index: 2;
+   transition: all 3s linear;
+}
+
+.position__fish:hover {
+   transform: translate(-600px, 200px);
+}
+
+.position__putlo {
+   position: absolute;
+   top: 285px;
+   left: 630px;
+   /* border: 1px solid rgb(255, 208, 0); */
+}
+
+.position__putlo::before {
+   content: "Так душевно по домашнему";
+   padding: 15px 0 0 20px;
+   display: inline-block;
+   background-color: rgba(240, 248, 255, 0.7);
+   width: 150px;
+   height: 100px;
+   position: relative;
+   bottom: 10px;
+   left: 20px;
+   border-radius: 50%;
+   font-size: 22px;
+   color: blue;
+}
+
+.position__pirat {
+   /* border: 1px solid rgb(255, 94, 0); */
+   position: absolute;
+
+   top: 700px;
+   left: 100px;
+   transition: all 0.3s linear;
+}
+
+.position__pirat:hover {
+
+   transform: scale(1.2);
+}
+
+.position__for-map {
+   position: relative;
+
+}
+
+
+
+.position__map {
+   position: absolute;
+   top: 500px;
+   left: 10px;
+   max-width: 400px;
+   z-index: 2;
+   visibility: hidden;
+   opacity: 0;
+   transition: all 0.8s ease;
+
+}
+
+
+.position__for-map:hover .position__map {
+   visibility: visible;
+   opacity: 1;
+}
+
+
+
+.practice {
+   padding-bottom: 40px;
+}
+
+.practice__position--fixed {
+   color: #023d58;
+   font-size: 60px;
+   background: #d37a06;
+   padding: 10px 0;
+   text-align: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: block;
+   min-width: 100%;
+}
+
+.practice__transform>div:not(:last-child) {
+   margin-bottom: 90px;
+}
+
+.practice__transform {
+   margin-top: 700px;
+   margin-bottom: 100px;
+}
+
+.practice__title {
+   color: #023d58;
+   font-size: 60px;
+   background: #d3b406;
+   padding: 10px 0;
+   text-align: center;
+   position: sticky;
+   top: 0;
+   left: 0;
+
+}
+
+
+.square1 {
+   width: 300px;
+   height: 300px;
+   background: rgb(184, 52, 52);
+   border-radius: 5px;
+}
+
+.square2 {
+   width: 300px;
+   height: 300px;
+   background: rgb(209, 175, 22);
+   border-radius: 5px;
+}
+
+.square3 {
+   width: 300px;
+   height: 300px;
+   background: rgb(64, 191, 230);
+   border-radius: 5px;
+
+}
+
+.practice__translate .square3:hover {
+   transform: translate(40px, 40px);
+}
+
+.practice__translate .square2:hover {
+   transform: translate(40px, 40px);
+}
+
+
+
+.practice__scale .square3:hover {
+   transform: scale(0.5);
+}
+
+.practice__scale .square2:hover {
+   transform: scale(0.7);
+}
+
+
+
+.practice__rotate .square3:hover {
+   transform: rotate(45deg);
+}
+
+.practice__rotate .square2:hover {
+   transform: rotate(75deg);
+}
+
+
+
+.practice__skew .square3:hover {
+   transform: skew(25deg);
+}
+
+.practice__skew .square2:hover {
+   transform: skew(-15deg);
+}
+
+
+
+.practice__transform-origin .square3:hover {
+   transform-origin: 0 0;
+   transform: rotate(-45deg);
+}
+
+.practice__transform-origin .square2:hover {
+   transform-origin: top right;
+   transform: rotate(-35deg);
+}
+
+
+
+.practice__perspective .square1:hover {
+   perspective: 400px;
+   transform-style: preserve-3d;
+}
+
+.practice__perspective .square2:hover {
+   transform: rotateY(200deg);
+
+}
+
+
+
+.practice__btn-back a {
+   color: #013f5c;
+   background: #d37a06;
+   font-size: 30px;
+   padding: 10px 15px;
+   border-radius: 5px;
+   cursor: pointer;
+   box-shadow: 0 5px 0 #013f5c;
+   transition: all 1s ease;
+}
+
+.practice__btn-back a:hover {
+   box-shadow: 0 3px 0 #013f5c;
+   background: #ee4f06;
+   margin-top: 3px;
+}
