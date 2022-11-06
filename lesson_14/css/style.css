@@ -1,0 +1,266 @@
+html,
+body {
+   height: 100%;
+   font-size: 20px;
+   color: aliceblue;
+}
+
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.main {
+   flex: 1 1 auto;
+   padding: 20px 0;
+   background: rgb(51, 24, 24);
+}
+
+[class*="__container"] {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.header {
+   background-color: rgb(215, 78, 14);
+   padding: 50px 0;
+}
+
+.header__title {
+   font-size: 50px;
+   text-align: center;
+}
+
+
+
+.tabs__btns {
+   display: flex;
+   gap: 10px;
+   margin-bottom: 20px;
+}
+
+.tabs__btn {
+   flex: 0 1 25%;
+
+   padding: 10px;
+   text-transform: uppercase;
+   border-radius: 5px;
+   text-align: center;
+}
+
+.tabs__btn:nth-of-type(1) {
+   background: rgb(13, 68, 13);
+}
+
+.tabs__btn:nth-of-type(2) {
+   background: rgb(25, 58, 95);
+}
+
+.tabs__btn:nth-of-type(3) {
+   background: rgb(150, 67, 22);
+}
+
+.tabs__btn:nth-of-type(4) {
+   background: rgb(139, 22, 150);
+}
+
+
+.tabs__content {
+
+   margin: 10px;
+   display: none;
+}
+
+.tabs__content:target {
+   display: block;
+}
+
+.tabs__wrap {
+   display: flex;
+   column-gap: 20px;
+   row-gap: 20px;
+   flex-wrap: wrap;
+}
+
+.tabs__square {
+   background: rgb(221, 219, 63);
+
+   width: 200px;
+   height: 200px;
+   display: flex;
+}
+
+.tabs__item {
+   padding: 5px;
+   border: 1px solid gray;
+   background: rgb(74, 43, 43);
+
+}
+
+/* justify-content */
+.tabs__content:nth-child(1) {
+   padding: 10px;
+   background: rgb(13, 68, 13);
+}
+
+.justify-content--flex-start {
+   display: flex;
+   justify-content: start;
+}
+
+.justify-content--flex-end {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.justify-content--center {
+   display: flex;
+   justify-content: center;
+}
+
+.justify-content--space-between {
+   display: flex;
+   justify-content: space-between;
+}
+
+.justify-content--space-around {
+   display: flex;
+   justify-content: space-around;
+}
+
+.justify-content--space-evenly {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+/* align-items */
+.tabs__content:nth-child(2) {
+   padding: 10px;
+   background: rgb(25, 58, 95);
+}
+
+.align-items--stretch {
+   display: flex;
+   align-items: stretch;
+}
+
+.align-items--flex-start {
+   display: flex;
+   align-items: flex-start;
+}
+
+.align-items--flex-end {
+   display: flex;
+   align-items: flex-end;
+}
+
+.align-items--center {
+   display: flex;
+   align-items: center;
+}
+
+/* flex-direction */
+.tabs__content:nth-child(3) {
+   padding: 10px;
+   background: rgb(150, 67, 22);
+}
+
+.flex-direction--row {
+   display: flex;
+   flex-direction: row;
+}
+
+.flex-direction--row-rewerse {
+   display: flex;
+   flex-direction: row-reverse;
+}
+
+.flex-direction--column {
+   display: flex;
+   flex-direction: column;
+}
+
+.flex-direction--column-rewerse {
+   display: flex;
+   flex-direction: column-reverse;
+}
+
+/* flex-wrap */
+.tabs__content:nth-child(4) {
+   padding: 10px;
+   background: rgb(139, 22, 150);
+}
+
+.flex-wrap--nowrap {
+   display: flex;
+   flex-wrap: nowrap;
+   margin-right: 200px;
+   align-items: flex-start;
+}
+
+.flex-wrap--nowrap div {
+   flex: 1 0 50%;
+
+}
+
+.flex-wrap--wrap {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+}
+
+.flex-wrap--wrap div {
+   flex: 1 1 50%;
+}
+
+/* Cards */
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -15px;
+}
+
+.cards__column {
+   flex: 0 1 33.333%;
+   padding: 0 15px;
+   margin-bottom: 20px;
+}
+
+.cards__item {
+   min-height: 100%;
+   padding: 15px;
+   background-color: rgb(215, 78, 14);
+   box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Чомусь не працює */
+/* .item-card:not(:last-child) {
+   margin-bottom: 10px;
+} */
+.item-card>*:last-child {
+   margin-bottom: 0;
+}
+
+.item-card {
+   display: flex;
+   flex-direction: column;
+   /* Чому не працює row-gap? */
+   /* row-gap: 10px; */
+   align-items: flex-start;
+
+}
+
+.item-card__image {
+   margin-bottom: 10px;
+}
+
+.item-card__image img {
+   max-width: 100%;
+}
+
+.item-card__text {
+   flex-grow: 1;
+   margin-bottom: 10px;
+}

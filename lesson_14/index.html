@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 14 flex</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <div class="header__title">FLEX</div>
+         </div>
+      </header>
+      <main class="main">
+         <div class="main__container">
+            <div class="main__tabs tabs">
+               <nav class="tabs__btns">
+                  <a class="tabs__btn" href="#tab-01">justify-content</a>
+                  <a class="tabs__btn" href="#tab-02">align-items</a>
+                  <a class="tabs__btn" href="#tab-03">flex-direction</a>
+                  <a class="tabs__btn" href="#tab-04">flex-wrap</a>
+               </nav>
+               <div class="tabs__body">
+                  <div id="tab-01" class="tabs__content">
+                     <div class="tabs__wrap">
+                        <div class="tabs__square  justify-content--flex-start">
+                           <div class="tabs__item">1</div>
+                           <div class="tabs__item">2</div>
+                           <div class="tabs__item">3</div>
+                           <div class="tabs__item">4</div>
+                        </div>
+                        <div class="tabs__square justify-content--flex-end">
+                           <div class="tabs__item">1</div>
+                           <div class="tabs__item">2</div>
+                           <div class="tabs__item">3</div>
+                           <div class="tabs__item">4</div>
+                        </div>
+                        <div class="tabs__square justify-content--center">
+                           <div class="tabs__item">1</div>
+                           <div class="tabs__item">2</div>
+                           <div class="tabs__item">3</div>
+                           <div class="tabs__item">4</div>
+                        </div>
+                        <div class="tabs__square justify-content--space-between">
+                           <div class="tabs__item">1</div>
+                           <div class="tabs__item">2</div>
+                           <div class="tabs__item">3</div>
+                           <div class="tabs__item">4</div>
+                        </div>
+                        <div class="tabs__square justify-content--space-around">
+                           <div class="tabs__item">1</div>
+                           <div class="tabs__item">2</div>
+                           <div class="tabs__item">3</div>
+                           <div class="tabs__item">4</div>
+                        </div>
+                        <div class="tabs__square justify-content--space-evenly">
+                           <div class="tabs__item">1</div>
+                           <div class="tabs__item">2</div>
+                           <div class="tabs__item">3</div>
+                           <div class="tabs__item">4</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="tab-02" class="tabs__content">
+                   <div class="tabs__wrap">
+                        <div class="tabs__square  align-items--stretch">
+                           <div class="tabs__item">1</div>
+                           <div class="tabs__item">2</div>
+                           <div class="tabs__item">3</div>
+                           <div class="tabs__item">4</div>
+                        </div>
+                        <div class="tabs__square align-items--flex-start">
+                           <div class="tabs__item">1</div>
+                           <div class="tabs__item">2</div>
+                           <div class="tabs__item">3</div>
+                           <div class="tabs__item">4</div>
+                        </div>
+                        <div class="tabs__square align-items--flex-end">
+                           <div class="tabs__item">1</div>
+                           <div class="tabs__item">2</div>
+                           <div class="tabs__item">3</div>
+                           <div class="tabs__item">4</div>
+                        </div>
+                        <div class="tabs__square align-items--center">
+                           <div class="tabs__item">1</div>
+                           <div class="tabs__item">2</div>
+                           <div class="tabs__item">3</div>
+                           <div class="tabs__item">4</div>
+                        </div>
+                   </div>
+                  </div>
+
+                  <div id="tab-03" class="tabs__content">
+                    <div class="tabs__wrap">
+                        <div class="tabs__square  flex-direction--row">
+                           <div class="tabs__item">1</div>
+                           <div class="tabs__item">2</div>
+                           <div class="tabs__item">3</div>
+                           <div class="tabs__item">4</div>
+                        </div>
+                        <div class="tabs__square flex-direction--row-rewerse">
+                           <div class="tabs__item">1</div>
+                           <div class="tabs__item">2</div>
+                           <div class="tabs__item">3</div>
+                           <div class="tabs__item">4</div>
+                        </div>
+                        <div class="tabs__square flex-direction--column">
+                           <div class="tabs__item">1</div>
+                           <div class="tabs__item">2</div>
+                           <div class="tabs__item">3</div>
+                           <div class="tabs__item">4</div>
+                        </div>
+                        <div class="tabs__square flex-direction--column-rewerse">
+                           <div class="tabs__item">1</div>
+                           <div class="tabs__item">2</div>
+                           <div class="tabs__item">3</div>
+                           <div class="tabs__item">4</div>
+                        </div>
+                    </div>
+                  </div>
+                  <div id="tab-04" class="tabs__content">
+                     <div class="tabs__wrap">
+                        <div class="tabs__square  flex-wrap--nowrap">
+                           <div class="tabs__item">1</div>
+                           <div class="tabs__item">2</div>
+                           <div class="tabs__item">3</div>
+                           <div class="tabs__item">4</div>
+                        </div>
+                        <div class="tabs__square flex-wrap--wrap">
+                           <div class="tabs__item">1</div>
+                           <div class="tabs__item">2</div>
+                           <div class="tabs__item">3</div>
+                           <div class="tabs__item">4</div>
+                        </div>
+                     </div>
+                     
+                  </div>
+               </div>
+            </div>
+            <!-- Cards -->
+            <div class="main__cards cards">
+              
+                  <div class="cards__column">
+                     <div class="cards__item item-card">
+                        <div class="item-card__image">
+                           <img src="img/foto1.jpg" alt="">
+                        </div>
+                        <div class="item-card__text">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quas pariatur sapiente, minima porro beatae eveniet ab nemo cum obcaecati dolorem omnis fuga expedita tempore doloremque explicabo perferendis natus hic.
+                        </div>
+                        <a class="item-card__button" href="#">Button</a>
+                     </div>
+                  </div>
+                  <div class="cards__column">
+                     <div class="cards__item item-card">
+                        <div class="item-card__image">
+                           <img src="img/foto2.jpg" alt="">
+                        </div>
+                        <div class="item-card__text">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quas pariatur sapiente, minima porro beatae eveniet ab nemo cum obcaecati dolorem omnis fuga expedita tempore doloremque explicabo perferendis natus hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos distinctio corporis temporibus atque excepturi modi eius ipsam hic nisi vel! Consectetur voluptatum nemo expedita ea quaerat nihil odit facilis excepturi.
+                        </div>
+                        <a class="item-card__button" href="#">Button</a>
+                     </div>
+                  </div>
+                 <div class="cards__column">
+                     <div class="cards__item item-card">
+                        <div class="item-card__image">
+                           <img src="img/foto3.jpg" alt="">
+                        </div>
+                        <div class="item-card__text">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quas pariatur sapiente, minima porro beatae eveniet ab nemo cum obcaecati dolorem omnis fuga expedita tempore doloremque explicabo perferendis natus hic.
+                        </div>
+                        <a class="item-card__button" href="#">Button</a>
+                     </div>
+                 </div>
+                 <div class="cards__column">
+                  <div class="cards__item item-card">
+                     <div class="item-card__image">
+                        <img src="img/foto4.jpg" alt="">
+                     </div>
+                     <div class="item-card__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quas pariatur sapiente, minima porro beatae eveniet ab nemo cum obcaecati dolorem omnis fuga expedita tempore doloremque explicabo perferendis natus hic.
+                     </div>
+                     <a class="item-card__button" href="#">Button</a>
+                  </div>
+               </div>
+               <div class="cards__column">
+                  <div class="cards__item item-card">
+                     <div class="item-card__image">
+                        <img src="img/foto5.jpg" alt="">
+                     </div>
+                     <div class="item-card__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quas pariatur sapiente, minima porro beatae eveniet ab nemo cum obcaecati dolorem omnis fuga expedita tempore doloremque explicabo perferendis natus hic.
+                     </div>
+                     <a class="item-card__button" href="#">Button</a>
+                  </div>
+               </div>
+             
+               
+            </div>
+
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container"></div>
+      </footer>
+   </div>
+
+
+</body>
+</html>
