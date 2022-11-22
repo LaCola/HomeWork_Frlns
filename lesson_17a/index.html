@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 15</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <a href="#" class="header__logo">
+               <img src="img/header/logo.svg" alt="logo">
+            </a>
+            <nav class="header__menu">
+               <ul class="header__list">
+                  <li class="header__items"><a href="#">About Us</a></li>
+                  <li class="header__items"><a href="#">Courses</a></li>
+                  <li class="header__items"><a href="#">Events</a></li>
+                  <li class="header__items"><a href="#">Blog</a></li>
+                  <li class="header__items"><a href="#">Contacts</a></li>
+               </ul>
+            </nav>
+            <div class="header__action">
+               <a href="#" class="header__button button">Get consultation</a>
+               <a href="#" class="header__login"><span>Log in / Register</span></a>
+            </div>
+         </div>
+      </header>
+      <main class="main">
+            <section class="first-block">
+               <div class="first-block__container">
+                  <div class="first-block__body body">
+                     <div class="body__content">
+                        <a href="#" class="body__play"> Play showreel</a>
+                        <h1 class="body__title">Enjoy studying
+                           with Createx Online Courses
+                        </h1>
+                        <div class="body__btns">
+                           <a href="#" class="body__button-1 button button--transparent">About us</a>
+                           <a href="#" class="body__button-2 button">Explore courses</a>
+                        </div>
+                     </div>
+                     
+                     <img class="body__image" src="img/section-First/illustration.svg" alt="image">
+                     
+                  </div>
+                  
+                  <div class="first-block__achievement achievement">
+                     <div class="achievement__item"><span>1200</span><p>Students graduated</p></div>
+                     <div class="achievement__poin"></div>
+                     <div class="achievement__item"><span>84</span><p>Completed courses</p> </div>
+                     <div class="achievement__poin"></div>
+                     <div class="achievement__item"><span>16</span><p>Qualified tutors</p></div>
+                     <div class="achievement__poin"></div>
+                     <div class="achievement__item"><span>5</span><p>Years of experience</p></div>  
+                  </div>
+               </div>
+               <div class="first-block__decor decor-first">
+                   <div class="decor-first__items decor-first__item1"></div>
+                   <div class="decor-first__items decor-first__item2"></div>
+                   <div class="decor-first__items decor-first__item3"></div>
+                   <div class="decor-first__items decor-first__item4"></div>
+                   <div class="decor-first__items decor-first__item5"></div>
+                   <div class="decor-first__items decor-first__item6"></div>
+               </div>
+            </section>
+            <section class="why-createx">
+               <div class="why-createx__container">
+                  <div class="why-createx__image"><img  src="img/section-Wy-createx/why-createx.jpg" alt=""></div>
+                  <div class="why-createx__content">
+                     <div class="why-createx__subtitle subtitle">Who we are</div>
+                     <h2 class="why-createx__title title">Why Createx?</h2>
+                     <ul class="why-createx__list">
+                        <li>A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+                        <li>Vulputate placerat amet pulvinar lorem nisl.</li>
+                        <li>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+                        <li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+                        <li>Tincidunt sagittis neque sem ac eget.</li>
+                        <li>Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
+                     </ul>
+                     <a href="#" class="why-createx__button button">More about us</a>
+                  </div>
+               </div>
+               <div class="why-createx__decor decor-why-cr">
+                  <div class="decor-why-cr__items decor-why-cr__item1"></div>
+                  <div class="decor-why-cr__items decor-why-cr__item2"></div>
+               </div>
+            </section>
+            <section class="drop-us">
+               <div class="drop-us__container">
+                  <div class="drop-us__image">
+                     <img src="img/form/form.svg" alt="picture">
+                  </div>
+                  <div class="drop-us__info">
+                     <div class="drop-us__subtitle subtitle">Any questions?</div>
+                     <h2 class="drop-us__title title">Drop us a line</h2>
+                     <form class="drop-us__form form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                        <div class="form__name form__item">
+                           <label for="userName">First Name*</label>
+                           <input id="userName" type="text" name="username" placeholder="Your first name" required>
+                        </div>
+                        <div class="form__last-name form__item">
+                           <label for="userLastName">Last  Name*</label>
+                           <input id="userLastName" type="text" name="userlastname" placeholder="Your last name" required>
+                        </div>
+                        <div class="form__email form__item">
+                           <label for="userEmail">Email*</label>
+                           <input id="userEmail" type="email" name="useremail" placeholder="Your working email" required>
+                        </div>
+                        <div class="form__phone form__item">
+                           <label for="userPhone">Phone</label>
+                           <input id="userPhone" type="tel" name="userphone" placeholder="Your phone number" >
+                        </div>
+                        <div class="form__message form__item">
+                           <label for="userMessage">Message*</label>
+                           <textarea id="userMessage" name="usermessage" placeholder="Your message" maxlength="30"></textarea>
+                        </div>
+
+                        <div class="form__bottom">
+                           <div class="form__checkbox checkbox">
+                              <input class="checkbox__input" id="checkbox" type="checkbox" name="agreement">
+                              <label class="checkbox__label" for="checkbox"><span class="checkbox__text" >I agree to receive communications from Createx Online School </span></label>
+                           </div>
+                           <button class="form__button button" type="submit">Send message</button>
+                        </div>
+
+                     </form>
+                  </div>
+               </div>
+            </section>
+      </main>
+      <footer class="footer"> 
+         <div class="footer__container"></div>
+      </footer>
+   </div>
+
+</body>
+</html>
