@@ -852,6 +852,7 @@ main {
 .form__bottom {
    display: flex;
    column-gap: 50px;
+   padding: 0 12px;
 }
 
 @media (max-width:943px) {
