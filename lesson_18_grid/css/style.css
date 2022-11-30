@@ -110,14 +110,13 @@ body {
    text-align: center;
    height: 52px;
    box-shadow: 0 3px 0 #e83731;
-   transition: all 1s ease;
+   transition: all 0.5s ease;
 }
 
 .button:hover {
 
    box-shadow: 0 1px 0 #e83731;
-   margin-top: 2px;
-   margin-bottom: -2px;
+   transform: translate(0, 2px);
 
 }
 
@@ -309,7 +308,7 @@ body {
 
 .button--transparent {
 
-   transition: all 1s ease;
+   transition: all 0.5s ease;
 
    display: inline-block;
    cursor: pointer;
@@ -377,7 +376,7 @@ body {
 
    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%) 0 0 / auto 100% no-repeat;
    opacity: 0;
-   transition: all 0.3s ease 0s;
+   transition: all 0.5s ease 0s;
    z-index: -1;
 }
 
@@ -388,8 +387,7 @@ body {
 
 .button--transparent:hover {
    box-shadow: 0 1px 0 #e83731;
-   margin-top: 2px;
-   margin-bottom: -2px;
+  transform: translate(0, 2px);
 
 }
 
